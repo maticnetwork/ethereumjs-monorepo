@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638413175162,
+  "lastUpdate": 1638414345936,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e001ba033b751e47d2691355e51abd9eda2b9b00",
-          "message": "client: fix hanging integration test (#1531)\n\n(reverts sync event handler changes)",
-          "timestamp": "2021-10-16T17:34:35-07:00",
-          "tree_id": "05296ecf0d9212272e04daa9833dc950ed5336ef",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e001ba033b751e47d2691355e51abd9eda2b9b00"
-        },
-        "date": 1634431375350,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 12393,
-            "range": "±12.10%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 14293,
-            "range": "±3.32%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 11179,
-            "range": "±2.50%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 5968,
-            "range": "±20.15%",
-            "unit": "ops/sec",
-            "extra": "40 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 11987,
-            "range": "±2.90%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1109,
-            "range": "±6.82%",
-            "unit": "ops/sec",
-            "extra": "58 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 128,
-            "range": "±89.08%",
-            "unit": "ops/sec",
-            "extra": "35 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 116,
-            "range": "±17.79%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 26.77,
-            "range": "±17.04%",
-            "unit": "ops/sec",
-            "extra": "20 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±113.82%",
             "unit": "ops/sec",
             "extra": "27 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fcaceaf4f0792cec6302fba2abfae095de091fbf",
+          "message": "client: fix libp2p sync and browser example (#1588)\n\n* fix webpack polyfills: buffer, process/browser\r\n* fix browser sync example\r\n* remove premature PEER_CONNECTED\r\n* parse bootnodes, set consistent chainDB\r\n* tidy libp2p files and other small fixes\r\n* remove index_old.ts\r\n* fix spec test (add anythng() matcher for new boolean param)\r\n* move client event handlers to client module\r\nrefactor some cli logic to own functions (helprpc, inputAccounts, setupDev)\r\n* align headerfetcher/blockfetcher logic, small grammar adjustments of log messages\r\n* add `string: true` to `unlock` arg so it doesn't get converted to a number\r\n* Libp2pserver test additions\r\n* further tidying of cli.ts\r\n* grammar (on -> in)\r\n* Add more lightsync tests\r\n* Add new blockfetcher store tests\r\n* Add blockfetcher tests for store method\r\n* Add header fetcher tests\r\n* use different input values for `td.when` rather than using `td.reset`\r\n* Add fetcher test for queue inserts\r\n* remove extraneous debug import\r\nCo-authored-by: acolytec3 <17355484+acolytec3@users.noreply.github.com>",
+          "timestamp": "2021-12-01T18:59:10-08:00",
+          "tree_id": "91b48de559fdc27f96a1d7ec5c70b1e0c1df3561",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/fcaceaf4f0792cec6302fba2abfae095de091fbf"
+        },
+        "date": 1638414344860,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 13653,
+            "range": "±13.16%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 14735,
+            "range": "±1.36%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12024,
+            "range": "±7.35%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 7060,
+            "range": "±23.44%",
+            "unit": "ops/sec",
+            "extra": "51 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13838,
+            "range": "±2.81%",
+            "unit": "ops/sec",
+            "extra": "42 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1109,
+            "range": "±7.71%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 107,
+            "range": "±83.28%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 103,
+            "range": "±35.39%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.08,
+            "range": "±118.80%",
+            "unit": "ops/sec",
+            "extra": "26 samples"
           }
         ]
       }
