@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638811933981,
+  "lastUpdate": 1638840528579,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "125e210cdcc412f901420ef038f230a6d060cb51",
-          "message": "client/vm: small fixes (#1541)\n\n* fix generateGenesis setting toBalance, don't overwrite codeHash and stateRoot, tidy\r\n\r\n* fix chalk output, update chalk to latest, tidy file and add typedocs\r\n\r\n* attempt to resolve peer:error event handler memory leak by removing bound listener after disconnect, tidy\r\n\r\n* fix new webpack polyfill errors from node-fetch, which we don't use so can safely pass false\r\n\r\n* nit: more stateManager generateGenesis code tidying\r\n\r\n* update multiaddrs to latest to fix libp2p so it doesn't bring node-fetch into webpack/karma",
-          "timestamp": "2021-10-22T20:37:33+02:00",
-          "tree_id": "3a7ae16642c89e2738b3100bace4db724d2cd7c9",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/125e210cdcc412f901420ef038f230a6d060cb51"
-        },
-        "date": 1634928149716,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 24542,
-            "range": "±5.15%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 25896,
-            "range": "±1.96%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 19766,
-            "range": "±14.44%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 23363,
-            "range": "±2.08%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 24466,
-            "range": "±1.97%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 23048,
-            "range": "±9.21%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 11834,
-            "range": "±18.52%",
-            "unit": "ops/sec",
-            "extra": "45 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 22437,
-            "range": "±2.31%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 14914,
-            "range": "±13.90%",
-            "unit": "ops/sec",
-            "extra": "42 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 17393,
-            "range": "±15.60%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2148,6 +2054,65 @@ window.BENCHMARK_DATA = {
             "range": "±21.18%",
             "unit": "ops/sec",
             "extra": "46 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "164989bfcb54e330f36ca71fde117fd8bd1725b1",
+          "message": "fix client error logging: add top level `format` to createLogger (#1595)",
+          "timestamp": "2021-12-06T17:24:30-08:00",
+          "tree_id": "452409a46524a275c1e5da9bce31f82a7f3a9f94",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/164989bfcb54e330f36ca71fde117fd8bd1725b1"
+        },
+        "date": 1638840527609,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 20209,
+            "range": "±3.60%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 18362,
+            "range": "±10.99%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 19755,
+            "range": "±1.32%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 19464,
+            "range": "±3.50%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 12659,
+            "range": "±18.74%",
+            "unit": "ops/sec",
+            "extra": "51 samples"
           }
         ]
       }
