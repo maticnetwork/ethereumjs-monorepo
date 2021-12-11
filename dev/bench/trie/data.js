@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639056423847,
+  "lastUpdate": 1639211318352,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f15f28b580923d040c6bdf9de68ff38cf1f5fab4",
-          "message": "client: sync stability fixes (#1543)\n\n* only attach once to global Event.PEER_ERROR on peerpool open (and clear listeners on close)\r\nthis should fix the MaxListenersExceededWarning for peer:error listeners\r\n\r\n* skip handleNewBlock if number exceeds one past our height since we can't validate it\r\n\r\n* if logger is missing message set to `(empty message)` so it doesn't crash the process\r\n\r\n* fetcher: enqueue jobs that return with empty result (could be no returned headers or bodies)\r\n\r\n* execution: use new blockchain getIteratorHead method\r\n\r\n* tests: add height to mocked chain\r\n\r\n* client: still add block hash to the known-by-peer list even if not further validated/processed\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-10-26T10:59:18+02:00",
-          "tree_id": "9bbe4b4317c167128ca2e7029facbe3ee7e9ba6b",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/f15f28b580923d040c6bdf9de68ff38cf1f5fab4"
-        },
-        "date": 1635239070019,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 13281,
-            "range": "±14.42%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 14339,
-            "range": "±2.26%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 11960,
-            "range": "±9.62%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 8554,
-            "range": "±21.99%",
-            "unit": "ops/sec",
-            "extra": "58 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 14081,
-            "range": "±3.84%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1159,
-            "range": "±6.59%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 110,
-            "range": "±92.09%",
-            "unit": "ops/sec",
-            "extra": "30 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 143,
-            "range": "±6.24%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 10.15,
-            "range": "±120.38%",
-            "unit": "ops/sec",
-            "extra": "16 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±117.09%",
             "unit": "ops/sec",
             "extra": "26 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22bc187f9e98f64756452bb065e3dfc64cb805a4",
+          "message": "VM: address consensus issue: tx goes OOG but refunds get applied anyways (#1603)\n\n* vm: add consensus bug test\r\n* vm: fix invalid selfdestructs when code deposit gas cannot be paid (upcoming ethereum/tests CreateOOGFromEOARefunds_d13g0v0)",
+          "timestamp": "2021-12-11T00:24:19-08:00",
+          "tree_id": "a76b900d99c4a13ddff1190169979678016a19c6",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/22bc187f9e98f64756452bb065e3dfc64cb805a4"
+        },
+        "date": 1639211317787,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 18224,
+            "range": "±11.92%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 19006,
+            "range": "±2.87%",
+            "unit": "ops/sec",
+            "extra": "80 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11357,
+            "range": "±22.65%",
+            "unit": "ops/sec",
+            "extra": "51 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 15754,
+            "range": "±3.41%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 16656,
+            "range": "±3.28%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1258,
+            "range": "±6.12%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 83.95,
+            "range": "±112.44%",
+            "unit": "ops/sec",
+            "extra": "20 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 145,
+            "range": "±6.60%",
+            "unit": "ops/sec",
+            "extra": "54 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.54,
+            "range": "±134.11%",
+            "unit": "ops/sec",
+            "extra": "15 samples"
           }
         ]
       }
