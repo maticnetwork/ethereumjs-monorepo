@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639603857831,
+  "lastUpdate": 1639616014633,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "ec5bbe1f6b65dcb5d01ec5cf1a52d5b611c30305",
-          "message": "client: add websocket support (#1508)\n\n* client: add websocket RPC endpoint to client",
-          "timestamp": "2021-10-28T05:56:34-04:00",
-          "tree_id": "354b82db1d0b6412546efcec208e72cf2c505eb8",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ec5bbe1f6b65dcb5d01ec5cf1a52d5b611c30305"
-        },
-        "date": 1635415527234,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 14658,
-            "range": "±5.05%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 14856,
-            "range": "±7.32%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 16226,
-            "range": "±3.20%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 16540,
-            "range": "±3.47%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 12160,
-            "range": "±12.83%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 14708,
-            "range": "±4.06%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 15313,
-            "range": "±4.04%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 15113,
-            "range": "±4.16%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 14164,
-            "range": "±4.86%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 10007,
-            "range": "±16.23%",
-            "unit": "ops/sec",
-            "extra": "47 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1938,6 +1844,65 @@ window.BENCHMARK_DATA = {
             "range": "±14.19%",
             "unit": "ops/sec",
             "extra": "56 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0c7bdfcdf5866fc31df2b87508156f3294bbae45",
+          "message": "eslint: disable no-extra-semi, remove overrides (#1613)",
+          "timestamp": "2021-12-15T16:49:16-08:00",
+          "tree_id": "61b44daaa86e65b37454ab64cd2286c593a0faf6",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/0c7bdfcdf5866fc31df2b87508156f3294bbae45"
+        },
+        "date": 1639616014113,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 20883,
+            "range": "±2.78%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 18958,
+            "range": "±8.77%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 20379,
+            "range": "±1.44%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 19522,
+            "range": "±3.89%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 13687,
+            "range": "±15.84%",
+            "unit": "ops/sec",
+            "extra": "55 samples"
           }
         ]
       }
