@@ -227,19 +227,27 @@ export default class Common extends EventEmitter {
       })
     } else {
       if (chainParamsOrName === CustomChain.PolygonMainnet) {
-        return Common.custom({
+        return Common.custom(
+        {
           name: CustomChain.PolygonMainnet,
           chainId: 137,
           networkId: 137,
-        })
+        },
+        { hardfork: Hardfork.Berlin }
+        )
       }
+
       if (chainParamsOrName === CustomChain.PolygonMumbai) {
-        return Common.custom({
+        return Common.custom(
+        {
           name: CustomChain.PolygonMumbai,
           chainId: 80001,
           networkId: 80001,
-        })
+        },
+        { hardfork: Hardfork.Berlin }
+       )
       }
+      
       if (chainParamsOrName === CustomChain.ArbitrumRinkebyTestnet) {
         return Common.custom({
           name: CustomChain.ArbitrumRinkebyTestnet,
@@ -247,6 +255,7 @@ export default class Common extends EventEmitter {
           networkId: 421611,
         })
       }
+
       if (chainParamsOrName === CustomChain.xDaiChain) {
         return Common.custom({
           name: CustomChain.xDaiChain,
